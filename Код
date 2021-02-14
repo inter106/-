@@ -1,0 +1,54 @@
+#Задание 1
+print("Задание 1")
+str="Hello World!!! 123"
+a=len(str)
+i=0
+b=0
+t=0
+dd=[]
+bb=[]
+while i<a:
+    if str[i]!=' ':
+        if b==0:
+            dd.append(i)
+        b=b+1
+    else:
+        bb.append(b)
+        b=0
+    i=i+1
+bb.append(b)
+i=0
+aa=len(bb)
+while i< aa-1:
+    if bb[i]<bb[i+1]:
+        t=i+1
+    i=i+1
+print(str[dd[t]:dd[t]+bb[t]])
+
+#Задание 2
+print("Задание 2")
+
+str="Hello;World!!!;123"
+a=len(str)
+i=0
+b=0
+t=0
+dd=[]
+bb=[]
+while i<a:
+    if str[i]!=';':
+        if b==0:
+            dd.append(i)
+        b=b+1
+    else:
+        bb.append(b)
+        b=0
+    i=i+1
+bb.append(b)
+i=0
+aa=len(bb)
+while i< aa-1:
+    if bb[i]<bb[i+1]:
+        t=i+1
+    i=i+1
+print(str[dd[t]:dd[t]+bb[t]])
